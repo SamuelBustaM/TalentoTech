@@ -139,6 +139,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+    }
     .layout-grid {
         grid-template-columns: 1fr;
         grid-template-areas: 
@@ -147,7 +150,7 @@ footer {
             "portfolio"
             "footer";
         grid-template-rows: repeat(4, auto);
-        
+
         .portfolio {
             grid-template-columns: 1fr;
             grid-template-areas: 
