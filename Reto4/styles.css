@@ -1,8 +1,10 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(245, 245, 220);
+    background-color: rgb(219, 219, 9);
     line-height: 1.6;
     margin: 15px;
+    padding: 0;
+    color: salmon;
 }
 
 header {
@@ -23,24 +25,81 @@ h2 {
     color: cadetblue;
 }
 
-
-main{
-    padding: 20px;
+.layout-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto 1fr 1fr auto;
+    margin-top: 0;
     margin-bottom: 30px;
+    gap: 20px;
+    padding: 20px;
+    grid-template-areas:
+        "header header header"
+        "sidebar primer_contenido segundo_contenido"
+        "sidebar tercer_contenido tercer_contenido"
+        "footer footer footer";
 }
 
-section {
+/*Ajustar la ubicacion de todos los elementos del diseño usando los grid-area que les corresponda*/
+.sidebar {
+    grid-area: sidebar;
+    background-color: aquamarine;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 3);
+}
+
+.sidebar h2 {
+    color: azure;
+}
+
+.primer_contenido {
+    grid-area: primer_contenido;
+}
+
+.segundo_contenido {
+    grid-area: segundo_contenido;
+}
+
+.tercer_contenido {
+    grid-area: tercer_contenido;
+}
+
+.sidebar h2 {
+    color: rgb(196, 116, 20);
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #f37474c5;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #ffffff;
+}
+
+.primer_contenido, .segundo_contenido, .tercer_contenido {
     background-color: white;
     border-radius: 20px;
     padding: 30px;
     padding-top: 10px;
-    margin-bottom: 20px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.904);
 }
 
-p, li {
-    font-size: 1.2em;
+p {
     color: rgba(4, 27, 13, 0.685);
+    font-size: 1.2em;
 }
 
 img {
@@ -57,7 +116,7 @@ ul {
 
 footer {
     background-color: rgba(37, 207, 230, 0.39);
-    color: #5f9ea0;
+    color: #14b0b6;
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -66,7 +125,7 @@ footer {
 }
 
 .correo {
-    color: rgb(140, 180, 180);
+    color: rgb(12, 75, 75);
     text-decoration: none;
 }
 
