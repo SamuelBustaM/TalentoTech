@@ -38,7 +38,9 @@ h2 {
 
 .layout-grid {
     display: grid;
-    grid-template-columns: 280px 1fr;
+    /* Este atributo se reemplaza por el siguiente para poder dejar fijo el sidebar: en esta lineael sidebar queda fijo de 280px y el resto del espacio para el contenido */
+    /* grid-template-columns: 280px 1fr; */
+    grid-template-columns: 1fr;
     gap: 0px;
     padding: 0px;
     height: 100vh;
@@ -47,13 +49,17 @@ h2 {
 
 /*Ajustar la ubicacion de todos los elementos del diseño usando los grid-area que les corresponda*/
 .sidebar {
-    background-color: #7ceff3;
+    background-color: #c6dd44;
+    box-sizing: border-box;
     padding: 20px;
-    position: sticky;
-    top: 0;
-    bottom: 0;
+    position: fixed;
+    top: 90px;
     left: 0;
-    /* height: 100vh; */
+    height: 100vh;
+    width: 280px;
+    overflow-y: auto;
+    z-index: 2;
+
 
 }
 
@@ -100,7 +106,7 @@ img {
     gap: 20px;
     margin-right: 20px;
     margin-bottom: 60px;
-    margin-left: 100px;
+    margin-left: 300px;
     margin-top: 20px;
     grid-template-columns: repeat(3, 1fr) ;
     grid-template-areas: 
@@ -132,6 +138,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 5;
 }
 
 .correo {
