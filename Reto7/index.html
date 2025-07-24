@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encuesta sobre consumo energético 🤳</title>
+</head>
+<body>
+    <header>
+        <h1>Encuesta sobre consumo energético 🤳</h1>
+    </header>
+
+    <main>
+        <form action=""method="POST">
+            <!-- Grupo Informacion Personal -->
+            <fieldset>
+                <legend>Informacion Personal</legend>
+
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Ingrese su nombre Completo">
+
+                <label for="email">correo electronico:</label>
+                <input type="email" id="email" name="email" required placeholder="Ingrese su correo electronico">
+
+                <label for="location">Ubicacion (Ciudad/Pais)</label>
+                <input type="text" name="location" id="location" required placeholder="Ingrese su Ubicacion">
+
+            </fieldset>
+
+            <!-- Grupo Consumo Energetico -->
+            <fieldset>
+                <legend>|Consumo Energético Actual</legend>
+
+                <label for="Energy_source">Fuente de Energia: </label>
+                <select name="energy_source" id="energy_source" required>
+                    <option value="">seleccione una opcion</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="gas">Gas natural</option>
+                    <option value="solar">Energia solar</option>
+                    <option value="eolica">Energia Eólica</option>
+                    <option value="otra">Otra...</option>
+                </select>
+
+                    <label for="monthly_comsuption">Consumo Mensual (Kwh):</label>
+                    <input type="number" 
+                        id="monthly_comsuption" 
+                        name="monthly_comsuption" 
+                        min="100"
+                        title="El consumo promedio de Colombia es de 157 Kw"
+                        required placeholder="Ingrese su consumo mensual en Kwh">
+            </fieldset>
+
+            <!-- Grupo Interes en energias renovables -->
+            <fieldset>
+                <legend>Interes en Energias Renovables</legend>
+
+                <label for=""></label>
+
+
+
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
