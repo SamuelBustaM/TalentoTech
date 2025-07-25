@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded',function() {
     //Añadir al boton un observador
     showBtn.addEventListener('click', function(){
         const message =inputBox.value;
-        console.log ('Dato ingresado',message)
+        console.log ('Dato ingresado',message);
+        outputBox.textContent = message
     })
 })
+
