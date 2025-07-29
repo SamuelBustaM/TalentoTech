@@ -1,0 +1,54 @@
+[
+    {
+      "Region": "Middle Africa",
+      "Promedio Renovables": 30.228478385964912
+    },
+    {
+      "Region": "Eastern Africa",
+      "Promedio Renovables": 28.633422157894735
+    },
+    {
+      "Region": "South and Central America",
+      "Promedio Renovables": 25.149845000000003
+    },
+    {
+      "Region": "Central America",
+      "Promedio Renovables": 22.584904824561402
+    },
+    {
+      "Region": "Western Africa",
+      "Promedio Renovables": 11.78266775614035
+    },
+    {
+      "Region": "Europe",
+      "Promedio Renovables": 9.056907592982455
+    },
+    {
+      "Region": "OCDE",
+      "Promedio Renovables": 8.236837035087719
+    },
+    {
+      "Region": "European Union",
+      "Promedio Renovables": 8.000053598245614
+    },
+    {
+      "Region": "North America",
+      "Promedio Renovables": 7.9562500210526315
+    },
+    {
+      "Region": "No OCDE",
+      "Promedio Renovables": 7.576261119298246
+    },
+    {
+      "Region": "Africa",
+      "Promedio Renovables": 7.440714421052632
+    },
+    {
+      "Region": "Asia Pacific",
+      "Promedio Renovables": 6.759766371929825
+    },
+    {
+      "Region": "Middle East",
+      "Promedio Renovables": 1.22883773
+    }
+  ]
